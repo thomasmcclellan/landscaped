@@ -1,0 +1,49 @@
+{
+  "name": "gardenersofthegalaxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && npm run serve",
+    "build": "npm run build-ts && npm run tslint",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "serve": "node dist/index.js",
+    "server": "npm run start",
+    "watch-node": "nodemon dist/index.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm watch-node\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "debug": "npm run build && npm run watch-debug",
+    "serve-debug": "nodemon --inspect dist/index.js",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\""
+  },
+  "author": "Thomas McClellan",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "passport": "^0.4.0",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/compression": "0.0.36",
+    "@types/dotenv": "^6.1.0",
+    "@types/express": "^4.16.1",
+    "@types/passport": "^1.0.0",
+    "@types/sequelize": "^4.27.36",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}

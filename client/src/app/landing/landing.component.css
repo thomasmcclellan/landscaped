@@ -1,0 +1,26 @@
+mat-card-actions {
+  text-align: center;
+  margin-top: -10rem;
+}
+
+button {
+  background: var(--darkBlue);
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  padding-top: 8vh;
+  height: 92vh;
+  width: 100vw;
+  background: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
+}
+
+.landing {
+  max-width: 40vw;
+  margin: auto;
+  background: transparent;
+  box-shadow: none;
+}

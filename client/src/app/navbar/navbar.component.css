@@ -1,0 +1,23 @@
+mat-toolbar {
+  background: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+button {
+  margin-left: 1em;
+  color: white;
+}
+
+button:hover {
+  color: var(--darkBlue);
+}
+
+#logo {
+  margin-top: 0.4rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

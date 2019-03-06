@@ -1,0 +1,11 @@
+@import '@angular/material/prebuilt-themes/purple-green.css';
+
+:root {
+  --lightGreen: #aae8a7;
+  --darkGreen: #56ba51;
+  --yellow: #f8da5b;
+  --orange: #e69064;
+  --lightBlue: #39b8eb;
+  --darkBlue: #247291;
+  --red: #e46366;
+}
