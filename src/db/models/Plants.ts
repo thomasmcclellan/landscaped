@@ -83,7 +83,14 @@
 //       types: [7.0],
 //       allowNull: true
 //     },
-//     hardinessZone: {
+//     hardinessZoneLow: {
+//       type: DataTypes.ENUM,
+//       values: [
+//         1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+//       ],
+//       allowNull: true
+//     },
+//     hardinessZoneHigh: {
 //       type: DataTypes.ENUM,
 //       values: [
 //         1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13

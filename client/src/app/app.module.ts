@@ -12,6 +12,7 @@ import { PlantComponent } from './plant/plant.component';
 import { NoteComponent } from './note/note.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MaterialComponent } from './material/material.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MaterialComponent } from './material/material.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule
   ],
