@@ -7,6 +7,7 @@ import { MatSort, MatPaginator, MatTableDataSource } from '@angular/material';
   styleUrls: ['./plant.component.css']
 })
 export class PlantComponent implements OnInit {
+  displayedColumns: string[] = ['name', 'hardinessRange', 'sowRange', 'bloomRange', 'harvestRange', 'soil', 'water', 'sun', 'choose']
   plantData: any = [
     {
       plantName: 'Tomato',
@@ -319,9 +320,8 @@ export class PlantComponent implements OnInit {
       transplantingWindow: 40
     },
   ]
-  displayedColumns: string[] = ['name', 'hardinessRange', 'sowRange', 'bloomRange', 'harvestRange', 'soil', 'water', 'sun', 'choose']
-  pageSizeOptions: number[] = [5, 10, 25, 100]
   dataSource: any
+  pageSizeOptions: number[] = [5, 10, 25]
   
   
   constructor() { }
@@ -332,7 +332,7 @@ export class PlantComponent implements OnInit {
   ngOnInit() {
     this.onRangeBuilder()
     // console.log(this.plantData)
-    this.dataSource= new MatTableDataSource(this.plantData)
+    this.dataSource = new MatTableDataSource(this.plantData)
     this.dataSource.sort = this.sort
     this.dataSource.paginator = this.paginator
   }

@@ -1,123 +1,125 @@
 <div id="main">
-  <div class="all">
-    <h1 style="text-align: center">All Plants</h1>
-    <div 
-      id="table" 
-      class="mat-elevation-z8"
-    >
-    <mat-form-field>
-      <input
-        matInput
-        (keyup)="applyFilter($event.target.value)"
-        placeholder="Filter Plants"
+  <mat-grid-list cols="4">
+    <mat-grid-title [colspan]="3">
+      <h1 style="text-align: center">All Plants</h1>
+      <div 
+        id="table" 
       >
-    </mat-form-field>
-      <mat-table 
-        class="mat-elevation-z8"
-        matSort
-        [dataSource]="dataSource"
-        style="margin: auto"
-      >
-        <ng-container matColumnDef="name">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Name</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.plantName }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="hardinessRange">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Hardiness Zone Range</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.hardinessRange }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="sowRange">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Sowing Range</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.sowRange }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="bloomRange">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Blooming Range</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.bloomRange }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="harvestRange">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Harvesting Range</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.harvestRange }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="soil">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Soil Type</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.soilType }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="water">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Water Requirements</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.waterRequirements }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="sun">
-          <mat-header-cell 
-            *matHeaderCellDef
-            mat-sort-header
-          >Sun Requirements</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >{{ element.sunRequirements }}</mat-cell>
-        </ng-container>  
-        <ng-container matColumnDef="choose">
-          <mat-header-cell 
-            *matHeaderCellDef
-          >Plant!</mat-header-cell>
-          <mat-cell 
-            *matCellDef="let element"
-          >
-            <button 
-              mat-button 
-            >Choose</button>
-          </mat-cell>
-        </ng-container>  
-        
-        <mat-header-row 
-          *matHeaderRowDef="displayedColumns"
-        ></mat-header-row>
-        <mat-row 
-          *matRowDef="let row, columns: displayedColumns"
-        ></mat-row>
-      </mat-table>
+      <mat-form-field>
+        <input
+          matInput
+          (keyup)="applyFilter($event.target.value)"
+          placeholder="Filter Plants"
+        >
+      </mat-form-field>
+      
+        <mat-table 
+          class="mat-elevation-z8"
+          [dataSource]="dataSource"
+          style="margin: auto"
+          matSort
+        >
+          <ng-container matColumnDef="name">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Name</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.plantName }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="hardinessRange">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Hardiness Zone Range</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.hardinessRange }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="sowRange">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Sowing Range</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.sowRange }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="bloomRange">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Blooming Range</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.bloomRange }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="harvestRange">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Harvesting Range</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.harvestRange }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="soil">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Soil Type</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.soilType }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="water">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Water Requirements</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.waterRequirements }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="sun">
+            <mat-header-cell 
+              *matHeaderCellDef
+              mat-sort-header
+            >Sun Requirements</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >{{ element.sunRequirements }}</mat-cell>
+          </ng-container>  
+          <ng-container matColumnDef="choose">
+            <mat-header-cell 
+              *matHeaderCellDef
+            >Plant!</mat-header-cell>
+            <mat-cell 
+              *matCellDef="let element"
+            >
+              <button 
+                mat-button 
+              >Choose</button>
+            </mat-cell>
+          </ng-container>  
+          
+          <mat-header-row 
+            *matHeaderRowDef="displayedColumns"
+          ></mat-header-row>
+          <mat-row 
+            *matRowDef="let row, columns: displayedColumns"
+          ></mat-row>
+        </mat-table>
 
-      <mat-paginator
-        [pageSizeOptions]="pageSizeOptions"
-        showFirstLastButtons
-      ></mat-paginator>
-    </div>
-  </div>
-  <div class="sidebar">
-
-  </div>
+        <mat-paginator
+          [pageSizeOptions]="pageSizeOptions"
+          showFirstLastButtons
+        ></mat-paginator>
+      </div>
+    </mat-grid-title>
+    <mat-grid-title [colspan]="1">
+      test
+    </mat-grid-title>
+  </mat-grid-list>
 </div>
