@@ -9,3 +9,7 @@
   --darkBlue: #247291;
   --red: #e46366;
 }
+
+body {
+  background: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
+}

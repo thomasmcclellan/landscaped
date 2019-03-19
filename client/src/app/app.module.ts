@@ -13,6 +13,9 @@ import { NoteComponent } from './note/note.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MaterialComponent } from './material/material.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AllPlantTableComponent } from './plant/all-plant-table/all-plant-table.component';
+import { MyPlantTableComponent } from './plant/my-plant-table/my-plant-table.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PlantComponent,
     NoteComponent,
     CalendarComponent,
-    MaterialComponent
+    MaterialComponent,
+    AllPlantTableComponent,
+    MyPlantTableComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
