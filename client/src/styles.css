@@ -1,13 +1,16 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 :root {
-  --lightGreen: #aae8a7;
-  --darkGreen: #56ba51;
+  --lightGreen: #DBF3D8;
+  --darkGreen: #8ad283;
   --yellow: #f8da5b;
-  --orange: #e69064;
-  --lightBlue: #39b8eb;
+  --orange: #fa9d7c;
+  --lightBlue: #c2dceb;
   --darkBlue: #247291;
   --red: #e46366;
+  --pink: #ed99b3;
+  --light: #ecd6c3;
+  --black: #0a0f14;
 }
 
 body {

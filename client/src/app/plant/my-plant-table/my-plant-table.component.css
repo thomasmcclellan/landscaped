@@ -1,3 +1,7 @@
+h1 {
+  color: var(--darkBlue);
+}
+
 .icon:hover {
   cursor: pointer;
 }
@@ -8,4 +12,36 @@
 
 .myPlantCard {
   margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--darkBlue);
+}
+
+.editIcon mat-icon {
+  color: var(--darkBlue);
+}
+
+.editIcon mat-icon:hover {
+  color: var(--orange);
+}
+
+.deleteIcon mat-icon {
+  color: var(--red);
+}
+
+.deleteIcon mat-icon:hover {
+  color: var(--orange);
+}
+
+.mat-badge-content {
+  margin-top: 0.25rem;
+  background-color: var(--yellow);
+  color: var(--darkBlue);
+}
+
+.plants {
+  list-style-type: none;
+}
+
+.plants li {
+  margin-top: 0.5rem;
 }

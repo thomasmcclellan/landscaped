@@ -1,0 +1,16 @@
+h1, input {
+  color: var(--darkBlue);
+}
+
+mat-table, mat-paginator {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--darkBlue);
+}
+
+mat-header-cell, mat-cell {
+  color: var(--darkBlue);
+}
+
+button:hover {
+  color: var(--orange);
+}

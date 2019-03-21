@@ -7,11 +7,11 @@ mat-toolbar {
 
 button {
   margin-left: 1em;
-  color: white;
+  color: var(--darkBlue);
 }
 
 button:hover {
-  color: var(--darkBlue);
+  color: var(--orange);
 }
 
 #logo {

@@ -5,6 +5,12 @@ mat-card-actions {
 
 button {
   background: var(--darkBlue);
+  color: var(--light);
+}
+
+button:hover {
+  background: var(--lightBlue);
+  color: var(--darkBlue);
 }
 
 #main {
