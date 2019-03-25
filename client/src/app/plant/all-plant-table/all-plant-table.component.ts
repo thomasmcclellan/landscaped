@@ -289,7 +289,7 @@ export class AllPlantTableComponent implements OnInit {
       transplantingWindow: 40
     },
     {
-      plantName: 'Tomato',
+      plantName: 'Pumpkin',
       sowDateStart: 'January',
       sowDateEnd: 'March',
       bloomDateStart: 'March',
@@ -323,10 +323,10 @@ export class AllPlantTableComponent implements OnInit {
   dataSource: any
   pageSizeOptions: number[] = [5, 10, 25]
 
-  constructor() { }
-
   @ViewChild(MatSort) sort: MatSort
   @ViewChild(MatPaginator) paginator: MatPaginator
+
+  constructor() { }
 
   ngOnInit() {
     this.onRangeBuilder()
@@ -347,5 +347,4 @@ export class AllPlantTableComponent implements OnInit {
   applyFilter(filteredValue: string) : void {
     this.dataSource.filter = filteredValue.trim().toLowerCase()
   }
-
 }

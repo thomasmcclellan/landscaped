@@ -12,7 +12,7 @@ h1 {
 
 .myPlantCard {
   margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--lightGreen);
   color: var(--darkBlue);
 }
 

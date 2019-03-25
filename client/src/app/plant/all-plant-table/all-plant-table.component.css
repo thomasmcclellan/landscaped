@@ -3,7 +3,7 @@ h1, input {
 }
 
 mat-table, mat-paginator {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--lightGreen);
   color: var(--darkBlue);
 }
 

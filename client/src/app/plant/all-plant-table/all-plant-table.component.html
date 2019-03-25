@@ -11,10 +11,13 @@
   </mat-form-field>
 
   <mat-table 
-    class="mat-elevation-z8"
+    class="mat-elevation-z8 responsive-table"
     [dataSource]="dataSource"
     style="margin: auto"
     matSort
+    matSortActive="name"
+    matSortDisableClear
+    matSortDirection="desc"
   >
     <ng-container matColumnDef="name">
       <mat-header-cell 
