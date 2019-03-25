@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatSort, MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatSort, MatPaginator, MatTableDataSource, MatDialog } from '@angular/material';
+import { ModalComponent } from '../../modal/modal.component';
 
 @Component({
   selector: 'app-all-plant-table',
@@ -326,7 +327,7 @@ export class AllPlantTableComponent implements OnInit {
   @ViewChild(MatSort) sort: MatSort
   @ViewChild(MatPaginator) paginator: MatPaginator
 
-  constructor() { }
+  constructor(private _dialog: MatDialog) { }
 
   ngOnInit() {
     this.onRangeBuilder()
@@ -346,5 +347,12 @@ export class AllPlantTableComponent implements OnInit {
 
   applyFilter(filteredValue: string) : void {
     this.dataSource.filter = filteredValue.trim().toLowerCase()
+  }
+
+  openDialog(selectedPlant: any) : void {
+    // console.log(selectedPlant)
+    this._dialog.open(ModalComponent, {
+      data: selectedPlant
+    })
   }
 }

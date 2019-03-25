@@ -15,7 +15,7 @@ import { MaterialComponent } from './material/material.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AllPlantTableComponent } from './plant/all-plant-table/all-plant-table.component';
 import { MyPlantTableComponent } from './plant/my-plant-table/my-plant-table.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +29,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CalendarComponent,
     MaterialComponent,
     AllPlantTableComponent,
-    MyPlantTableComponent
+    MyPlantTableComponent,
+    ModalComponent
   ],
+  entryComponents: [ModalComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule,
-    FlexLayoutModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatToolbarModule, MatButtonModule, MatCardModule, MatPaginatorModule, MatSortModule, MatTableModule, MatFormFieldModule, MatInputModule, MatGridListModule, MatIconModule, MatBadgeModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { 
+  MatToolbarModule, 
+  MatButtonModule, 
+  MatCardModule, 
+  MatPaginatorModule, 
+  MatSortModule, 
+  MatTableModule, 
+  MatFormFieldModule, 
+  MatInputModule, 
+  MatGridListModule, 
+  MatIconModule, 
+  MatBadgeModule, 
+  MatDialogModule 
+} from '@angular/material';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
@@ -16,10 +31,12 @@ import { MatToolbarModule, MatButtonModule, MatCardModule, MatPaginatorModule, M
     MatInputModule,
     MatGridListModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatDialogModule
   ],
   exports: [
     CommonModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
@@ -30,7 +47,8 @@ import { MatToolbarModule, MatButtonModule, MatCardModule, MatPaginatorModule, M
     MatInputModule,
     MatGridListModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatDialogModule
   ]
 })
 export class MaterialModule { }
