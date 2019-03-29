@@ -1,18 +1,23 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 :root {
-  --lightGreen: #DBF3D8;
-  --darkGreen: #8ad283;
+  --lightGreen: #8fdf9d;
+  --green: #3cb251;
+  --darkGreen: #0e7f22;
   --yellow: #f8da5b;
-  --orange: #fa9d7c;
-  --lightBlue: #c2dceb;
-  --darkBlue: #247291;
-  --red: #e46366;
-  --pink: #ed99b3;
-  --light: #ecd6c3;
+  --orange: #e8984f;
+  --lightBlue: #83c0c9;
+  --blue: #32838e;
+  --darkBlue: #0d5b66;
+  --red: #e85a4f;
+  --lightBrown: #eae7dc;
+  --brown: #d8c3a5;
+  --grey: #8e8d8a;
+  --white: #faf9f9;
   --black: #0a0f14;
 }
 
 body {
-  background: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
+  /* background: linear-gradient(to right, var(--lightGreen), var(--darkGreen)); */
+  background: var(--darkGreen);
 }

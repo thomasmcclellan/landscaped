@@ -1,8 +1,18 @@
-<h1 mat-dialog-title>You Are Going To Plant {{ _plantData.plantName }}!</h1>
+<h1 mat-dialog-title>You Are Going To Plant <b style="color: var(--orange)">{{ _plantData.plantName }}</b>!</h1>
 <hr>
 <div mat-dialog-content id="main">
   <h3 class="mat-h3">It's a perfect time to plant!</h3>
-  <mat-form-field>
-    <input matInput type="number" min="0" placeholder="Quantity">
-  </mat-form-field>
+  <p class="mat-body">NOTE: You can plant <b style="color: var(--orange)">{{ _plantData.plantsPerSquareFoot }}</b> {{ _plantData.plantName }} per square foot.</p>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <input matInput type="number" min="0" placeholder="Quantity" formControlName="quantity">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Select Plot" >
+        <mat-option *ngFor="let plot of _plots" value="{{ plot.name }}">{{ plot.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <a class="mat-body">or Create a New Plot</a>
+    <button mat-button>Plant!</button>
+  </form>
 </div>

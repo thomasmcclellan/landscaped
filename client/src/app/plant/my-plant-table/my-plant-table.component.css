@@ -1,5 +1,10 @@
 h1 {
-  color: var(--darkBlue);
+  color: var(--darkGreen);
+}
+
+.myPlantDeck {
+  overflow-y: scroll;
+  height: 70vh;
 }
 
 .icon:hover {
@@ -12,30 +17,26 @@ h1 {
 
 .myPlantCard {
   margin-bottom: 1rem;
-  background: var(--lightGreen);
-  color: var(--darkBlue);
+  margin-right: 1rem;
+  background: var(--lightBrown);
+  color: var(--darkGreen);
 }
 
-.editIcon mat-icon {
-  color: var(--darkBlue);
+.deleteIcon mat-icon, .editIcon mat-icon {
+  color: var(--brown);
 }
 
 .editIcon mat-icon:hover {
-  color: var(--orange);
-}
-
-.deleteIcon mat-icon {
-  color: var(--red);
+  color: var(--darkGreen);
 }
 
 .deleteIcon mat-icon:hover {
-  color: var(--orange);
+  color: var(--red);
 }
 
 .mat-badge-content {
   margin-top: 0.25rem;
-  background-color: var(--yellow);
-  color: var(--darkBlue);
+  background-color: var(--darkGreen);
 }
 
 .plants {
@@ -44,4 +45,24 @@ h1 {
 
 .plants li {
   margin-top: 0.5rem;
+}
+
+.small {
+  color: var(--grey);
+  font-size: 12px;
+  float: right;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkGreen); 
 }

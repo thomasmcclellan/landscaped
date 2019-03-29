@@ -21,7 +21,7 @@ button:hover {
   padding-top: 8vh;
   height: 92vh;
   width: 100vw;
-  background: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
+  background: var(--lightGreen);
 }
 
 .landing {

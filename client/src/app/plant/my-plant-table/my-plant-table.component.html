@@ -1,5 +1,14 @@
 <h1 style="text-align: center; margin-bottom: 2rem" class="mat-h1">My Plants</h1>
-<mat-card class="myPlantCard">
+
+<mat-form-field>
+  <input
+    matInput
+    (keyup)="applyFilter($event.target.value)"
+    placeholder="Filter Plots"
+  >
+</mat-form-field>
+
+<!-- <mat-card class="myPlantCard">
   <mat-card-header>
     <mat-card-title><a>Plot 1</a></mat-card-title>
     <span class="spacer"></span> 
@@ -19,46 +28,27 @@
       <li><span matBadge="4" matBadgeSize="medium" matBadgePosition="before">&nbsp; &nbsp; Brussel Sprouts </span></li>
     </ul>
   </mat-card-content>
-</mat-card>
-<mat-card class="myPlantCard">
+</mat-card> -->
+<div class="myPlantDeck">
+  <mat-card class="myPlantCard" *ngFor="let plot of plots">
     <mat-card-header>
-        <mat-card-title><a>Plot 2</a></mat-card-title>
-        <span class="spacer"></span> 
-        <a class="icon editIcon" mat-icon-button>
-          <mat-icon>edit</mat-icon>
-        </a>
-        <a class="icon deleteIcon" mat-icon-button>
-          <mat-icon>delete</mat-icon>
-        </a>
-        <mat-card-subtitle>10 / 40 sq. ft. alocated</mat-card-subtitle>
-      </mat-card-header>
-  <mat-card-content>
-    <ul>
-      <li>Tomato</li>
-      <li>Zucchini</li>
-      <li>Onion</li>
-      <li>Brussel Sprouts</li>
-    </ul>
-  </mat-card-content>
-</mat-card>
-<mat-card class="myPlantCard">
-    <mat-card-header>
-        <mat-card-title><a>Plot 3</a></mat-card-title>
-        <span class="spacer"></span> 
-        <a class="icon editIcon" mat-icon-button>
-          <mat-icon>edit</mat-icon>
-        </a>
-        <a class="icon deleteIcon" mat-icon-button>
-          <mat-icon>delete</mat-icon>
-        </a>
-        <mat-card-subtitle>10 / 40 sq. ft. alocated</mat-card-subtitle>
-      </mat-card-header>
-  <mat-card-content>
-    <ul>
-      <li>Tomato</li>
-      <li>Zucchini</li>
-      <li>Onion</li>
-      <li>Brussel Sprouts</li>
-    </ul>
-  </mat-card-content>
-</mat-card>
+      <mat-card-title><a>{{ plot.name }}</a></mat-card-title>
+      <span class="spacer"></span> 
+      <a class="icon editIcon" mat-icon-button>
+        <mat-icon>edit</mat-icon>
+      </a>
+      <a class="icon deleteIcon" mat-icon-button>
+        <mat-icon>delete</mat-icon>
+      </a>
+      <mat-card-subtitle>{{ plot.spaceUsed }} / {{ plot.spaceAvailable }} sq. ft. alocated</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content *ngFor="let plant of plot.plants">
+      <ul class="plants">
+          <li>
+            <span matBadge="{{ plant.plantsPerSquareFoot }}" matBadgeSize="medium" matBadgePosition="before">&nbsp; &nbsp; {{ plant.plantName }} </span>
+            <span class="small">{{ plant.plantsPerSquareFoot }} per square foot</span>
+          </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</div>

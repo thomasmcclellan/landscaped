@@ -1,16 +1,24 @@
 h1, input {
-  color: var(--darkBlue);
+  color: var(--darkGreen);
 }
 
 mat-table, mat-paginator {
-  background: var(--lightGreen);
-  color: var(--darkBlue);
+  background: var(--brown);
+  color: var(--darkGreen);
 }
 
 mat-header-cell, mat-cell {
-  color: var(--darkBlue);
+  color: var(--darkGreen);
 }
 
 button:hover {
   color: var(--orange);
+}
+
+md-input-container label {
+  color: red;
+}
+
+:host/deep/ .mat-form-field-underline {
+  color: red !important;
 }

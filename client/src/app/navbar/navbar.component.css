@@ -1,5 +1,6 @@
 mat-toolbar {
-  background: linear-gradient(to right, var(--lightGreen), var(--darkGreen));
+  /* background: linear-gradient(to right, var(--lightGreen), var(--darkGreen)); */
+  background: var(--lightGreen);
   position: fixed;
   top: 0;
   left: 0;
@@ -8,11 +9,11 @@ mat-toolbar {
 
 button {
   margin-left: 1em;
-  color: var(--darkBlue);
+  color: var(--darkGreen);
 }
 
 button:hover {
-  color: var(--orange);
+  color: var(--white);
 }
 
 #logo {

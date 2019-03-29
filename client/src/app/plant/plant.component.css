@@ -1,14 +1,14 @@
-#background {
-  height: 98vh;
-  background: radial-gradient(var(--orange) 50%, transparent);
-  filter: blur(1em);
-  z-index: -1;
-}
-
 #main {
   position: absolute;
   top: 0;
   width: 98%;
   z-index: 0;
   padding-top: 10vh;
+}
+
+.background {
+  height: 98vh;
+  background: var(--brown);
+  border-radius: 0.4rem;
+  z-index: -1;
 }

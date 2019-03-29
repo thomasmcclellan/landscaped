@@ -350,7 +350,6 @@ export class AllPlantTableComponent implements OnInit {
   }
 
   openDialog(selectedPlant: any) : void {
-    // console.log(selectedPlant)
     this._dialog.open(ModalComponent, {
       data: selectedPlant
     })
