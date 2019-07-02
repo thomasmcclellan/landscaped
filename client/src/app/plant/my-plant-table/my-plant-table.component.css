@@ -1,5 +1,5 @@
 h1 {
-  color: var(--darkGreen);
+  color: var(--dark);
 }
 
 .myPlantDeck {
@@ -18,16 +18,16 @@ h1 {
 .myPlantCard {
   margin-bottom: 1rem;
   margin-right: 1rem;
-  background: var(--lightBrown);
-  color: var(--darkGreen);
+  /* background: var(--light-green); */
+  color: var(--dark);
 }
 
 .deleteIcon mat-icon, .editIcon mat-icon {
-  color: var(--brown);
+  color: var(--dark);
 }
 
 .editIcon mat-icon:hover {
-  color: var(--darkGreen);
+  color: var(--dark-green);
 }
 
 .deleteIcon mat-icon:hover {
@@ -36,7 +36,7 @@ h1 {
 
 .mat-badge-content {
   margin-top: 0.25rem;
-  background-color: var(--darkGreen);
+  background-color: var(--dark-green);
 }
 
 .plants {
@@ -48,7 +48,7 @@ h1 {
 }
 
 .small {
-  color: var(--grey);
+  color: var(--dark-green);
   font-size: 12px;
   float: right;
 }
@@ -59,10 +59,10 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--green); 
+  background: var(--dark-green); 
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--darkGreen); 
+  background: var(--light-green); 
 }

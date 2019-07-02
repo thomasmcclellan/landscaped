@@ -324,8 +324,8 @@ export class AllPlantTableComponent implements OnInit {
   dataSource: any
   pageSizeOptions: number[] = [5, 10, 25]
 
-  @ViewChild(MatSort) sort: MatSort
-  @ViewChild(MatPaginator) paginator: MatPaginator
+  @ViewChild(MatSort, { static: true }) sort: MatSort
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator
 
   constructor(private _dialog: MatDialog) { }
 

@@ -1,23 +1,16 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 :root {
-  --lightGreen: #8fdf9d;
-  --green: #3cb251;
-  --darkGreen: #0e7f22;
-  --yellow: #f8da5b;
-  --orange: #e8984f;
-  --lightBlue: #83c0c9;
-  --blue: #32838e;
-  --darkBlue: #0d5b66;
-  --red: #e85a4f;
-  --lightBrown: #eae7dc;
-  --brown: #d8c3a5;
-  --grey: #8e8d8a;
-  --white: #faf9f9;
-  --black: #0a0f14;
+  --light-green: #2ecc71;
+  --dark-green: #27ae60;
+  --yellow: #f1c40f;
+  --red: #e74c3c;
+  --light: #ecf0f1;
+  --dark: #2c3e50;
 }
 
 body {
-  /* background: linear-gradient(to right, var(--lightGreen), var(--darkGreen)); */
-  background: var(--darkGreen);
+  background: var(--light);
 }
+
+/* logomakr.com/4IPFup */
