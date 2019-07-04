@@ -45,7 +45,7 @@
     <mat-card-content *ngFor="let plant of plot.plants">
       <ul class="plants">
           <li>
-            <span matBadge="{{ plant.plantsPerSquareFoot }}" matBadgeSize="medium" matBadgePosition="before">&nbsp; &nbsp; {{ plant.plantName }} </span>
+            <span matBadge="{{ plant.quanity }}" matBadgeSize="medium" matBadgePosition="before">&nbsp; &nbsp; {{ plant.plantName }} </span>
             <span class="small">{{ plant.plantsPerSquareFoot }} per square foot</span>
           </li>
       </ul>

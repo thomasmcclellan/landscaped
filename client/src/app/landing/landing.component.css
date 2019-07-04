@@ -4,16 +4,14 @@ mat-card-actions {
 }
 
 button {
-  background: var(--darkBlue);
-  color: var(--light);
+  color: var(--dark-green);
 }
 
 button:hover {
-  background: var(--lightBlue);
-  color: var(--darkBlue);
+  color: var(--dark);
 }
 
-#main {
+/* #main {
   position: absolute;
   top: 0;
   right: 0;
@@ -21,12 +19,12 @@ button:hover {
   padding-top: 8vh;
   height: 92vh;
   width: 100vw;
-  background: var(--lightGreen);
-}
+} */
 
 .landing {
   max-width: 40vw;
   margin: auto;
+  margin-top: 7rem;
   background: transparent;
   box-shadow: none;
 }

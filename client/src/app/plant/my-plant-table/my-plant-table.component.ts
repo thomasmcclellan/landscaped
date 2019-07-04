@@ -9,8 +9,8 @@ export class MyPlantTableComponent implements OnInit {
   _plots: Array<any> = [
     { 
       name: `Margot's Plot`,
-      height: 6,
-      width: 30,
+      height: 2,
+      width: 16,
       plants: [
         { 
           plantName: 'Tomatoes',
@@ -51,8 +51,8 @@ export class MyPlantTableComponent implements OnInit {
     }, 
     { 
       name: `Flower Plot`,
-      height: 6,
-      width: 30,
+      height: 2,
+      width: 8,
       plants: [
         { 
           plantName: 'Tomatoes',
@@ -93,8 +93,8 @@ export class MyPlantTableComponent implements OnInit {
     }, 
     { 
       name: `Garden Plot`,
-      height: 6,
-      width: 30,
+      height: 3,
+      width: 27,
       plants: [
         { 
           plantName: 'Tomatoes',
@@ -135,8 +135,8 @@ export class MyPlantTableComponent implements OnInit {
     }, 
     { 
       name: `Flowing Plot`,
-      height: 6,
-      width: 30,
+      height: 2,
+      width: 2,
       plants: [
         { 
           plantName: 'Tomatoes',
@@ -181,24 +181,25 @@ export class MyPlantTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.setSpace()
     this.plots = this._plots
+    this.setSpace()
   }
 
   applyFilter(filteredValue: string) : void {
     this.plots = this._plots.filter(filter => filter.name.trim().toLowerCase().includes(filteredValue.trim().toLowerCase()))
   }
 
-  // setSpace() : void {
-  //   this._plots.map(plot => {
-  //     let used: number
-  //     plot['spaceAvailable'] = plot.height * plot.width
-  //     plot.plants.map(plant => {
-  //       used += plant.quanity
-  //       console.log(used)
-  //     })
-  //     plot['spaceUsed'] = used
-  //   })
-  //   // console.log(this._plots)
-  // }
+  setSpace() : void {
+    this._plots.map(plot => {
+      let used: number = 0
+
+      plot['spaceAvailable'] = plot.height * plot.width
+
+      for (let plant of plot.plants) {
+        let temp: number = (plant.quanity / plant.plantsPerSquareFoot)
+        used += temp
+      }
+      plot['spaceUsed'] = used
+    })
+  }
 }
