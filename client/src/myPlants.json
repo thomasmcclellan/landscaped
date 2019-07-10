@@ -1,0 +1,170 @@
+[
+  { 
+    "name": "Margot's Plot",
+    "height": 2,
+    "width": 16,
+    "plants": [
+      { 
+        "plantName": "Tomatoes",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Zucchini",
+        "plantsPerSquareFoot": 1,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Carrots",
+        "plantsPerSquareFoot": 10,
+        "quanity": 10
+      },
+      { 
+        "plantName": "Broccoli",
+        "plantsPerSquareFoot": 1,
+        "quanity": 4
+      },
+      { 
+        "plantName": "Lettuce",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Brussel Sprouts",
+        "plantsPerSquareFoot": 2,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Bell Peppers",
+        "plantsPerSquareFoot": 4,
+        "quanity": 12
+      }
+    ]
+  }, 
+  { 
+    "name": "Flower Plot",
+    "height": 2,
+    "width": 8,
+    "plants": [
+      { 
+        "plantName": "Tomatoes",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Zucchini",
+        "plantsPerSquareFoot": 1,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Carrots",
+        "plantsPerSquareFoot": 10,
+        "quanity": 10
+      },
+      { 
+        "plantName": "Broccoli",
+        "plantsPerSquareFoot": 1,
+        "quanity": 4
+      },
+      { 
+        "plantName": "Lettuce",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Brussel Sprouts",
+        "plantsPerSquareFoot": 2,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Bell Peppers",
+        "plantsPerSquareFoot": 4,
+        "quanity": 12
+      }
+    ]
+  }, 
+  { 
+    "name": "Garden Plot",
+    "height": 3,
+    "width": 27,
+    "plants": [
+      { 
+        "plantName": "Tomatoes",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Zucchini",
+        "plantsPerSquareFoot": 1,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Carrots",
+        "plantsPerSquareFoot": 10,
+        "quanity": 10
+      },
+      { 
+        "plantName": "Broccoli",
+        "plantsPerSquareFoot": 1,
+        "quanity": 4
+      },
+      { 
+        "plantName": "Lettuce",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Brussel Sprouts",
+        "plantsPerSquareFoot": 2,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Bell Peppers",
+        "plantsPerSquareFoot": 4,
+        "quanity": 12
+      }
+    ] 
+  }, 
+  { 
+    "name": "Flowing Plot",
+    "height": 2,
+    "width": 2,
+    "plants": [
+      { 
+        "plantName": "Tomatoes",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Zucchini",
+        "plantsPerSquareFoot": 1,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Carrots",
+        "plantsPerSquareFoot": 10,
+        "quanity": 10
+      },
+      { 
+        "plantName": "Broccoli",
+        "plantsPerSquareFoot": 1,
+        "quanity": 4
+      },
+      { 
+        "plantName": "Lettuce",
+        "plantsPerSquareFoot": 4,
+        "quanity": 8
+      },
+      { 
+        "plantName": "Brussel Sprouts",
+        "plantsPerSquareFoot": 2,
+        "quanity": 2
+      },
+      { 
+        "plantName": "Bell Peppers",
+        "plantsPerSquareFoot": 4,
+        "quanity": 12
+      }
+    ]
+  }
+]

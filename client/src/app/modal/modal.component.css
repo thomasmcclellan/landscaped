@@ -1,7 +1,11 @@
 h1 {
   text-align: center;
 }
-/* 
-#main {
-  background: var(--lightGreen);
-} */
+
+button:hover {
+  color: var(--dark-green);
+}
+
+#plant-name, #plant-quantity {
+  color: var(--dark-green);
+}
